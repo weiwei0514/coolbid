@@ -1,0 +1,33 @@
+
+.nav {
+  width: 100%;
+  color: #2e2e2e;
+  background: #bbb;
+  letter-spacing: .1rem;
+  font-size: 2rem;
+}
+
+.nav ul {
+  text-align: center;
+  margin: 0;
+}
+
+.nav ul li {
+  display: inline-block;
+  padding: 0 9rem;
+  line-height: 5rem;
+  cursor: pointer;
+}
+.nav ul a{
+  color:#2e2e2e;
+  text-decoration: none;
+}
+.nav ul li:hover {
+  background: #edae10;
+}
+
+.nav ul li:hover a {
+  color: #2e2e2e;
+}
+
+/*# sourceMappingURL=.nav2.css.map */

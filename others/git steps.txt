@@ -1,0 +1,20 @@
+1. clone repo 到 root 資料夾：git clone https://github.com/unicornGL/CoolBid.git
+
+2. cd CoolBid
+
+<!--以下步驟每次要新建檔案的時候請先執行-->
+
+3. 將 repo 的檔案拉下來：git pull
+
+4. 新增檔案至暫存區：git add .(全部檔案) or {檔案名稱}
+
+5. 新增 commit：git commit -m "{註解訊息}" (註解寫清楚做了什麼調整)
+
+6. 推上 GitHub：git push (建議做完一個功能或頁面再上傳)
+
+7. 若有衝突，要記得處理
+
+<!--以上為步驟-->
+
+
+P.S: {}不要跟著打進去嘿....

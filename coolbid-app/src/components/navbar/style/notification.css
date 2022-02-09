@@ -1,0 +1,103 @@
+.notificationNum{
+  background-color:red;
+  border-radius:50%;
+  padding:.1rem .6rem;
+  position: absolute;
+  left:2.3rem;
+  bottom:3.2rem;
+  color:white;
+}
+/* Notification Container */
+.notification-container {
+  display: none;
+  cursor: default;
+  position: absolute;
+  z-index: 999;
+  top: 4.5rem;
+  right: 18.5rem;
+  width: 400px;
+  font-weight: 300;
+  background: white;
+  border-radius: 0.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+  -webkit-animation-name: dropPanel;
+          animation-name: dropPanel;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: all;
+          animation-timing-function: all;
+  -webkit-animation-duration: .75s;
+          animation-duration: .75s;
+}
+
+.notification-container:before {
+  content: "";
+  position: absolute;
+  top: .1rem;
+  right: 0;
+  width: 0;
+  height: 0;
+  -webkit-transform: translate(-1rem, -100%);
+          transform: translate(-1rem, -100%);
+  border-left: .75rem solid transparent;
+  border-right: .75rem solid transparent;
+  border-bottom: .75rem solid white;
+}
+/* Notification Container---END */
+.title{
+  text-transform: uppercase;
+  font-size: 75%;
+  font-weight: 700;
+  color: #84929f;
+  padding: 1.5rem 2rem;
+}
+
+.close {
+  color: #b5c4d2;
+  font-size: 140%;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.close:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+
+.img{
+  margin: 1.5rem;
+  height: 6rem;
+  width: 6rem;
+  background-color: peru;
+  vertical-align: bottom;
+  display: inline-block;
+}
+.notification{
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+.description{
+  width: 70%;
+  color: #84929f;
+}
+.infoTitle{
+  margin-bottom: 0;
+}
+p{
+  margin-top: .2rem;
+}
+.seeMore{
+  color: rgb(17, 17, 49);
+  height: 5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 5rem;
+  cursor: pointer;
+}
+
+

@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sellerBackend_Member_Wrap {
+  margin: auto;
+  margin-top: 15rem;
+}
+
+.sellerBackend_Member_Wrap .breadcrumbsArea {
+  margin-left: 200px;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+.sellerBackend_Member_Wrap .sellerBackend_Member_Container {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.side-menu {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.nav .link {
+  display: block;
+  padding: 10px;
+  color: #707070;
+  text-decoration: none;
+}
+
+.nav li + li {
+  border-top: 1px dashed #707070;
+}
+
+.nav li {
+  list-style: none;
+}
+/*# sourceMappingURL=Main.css.map */

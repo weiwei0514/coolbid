@@ -1,0 +1,53 @@
+.Sellerhomopage_wrap {
+  // border: 1px #000 solid;
+  font-size: 20px;
+  text-align: center;
+}
+
+.wrap_container {
+  width: 80%;
+  // border: 1px #000 solid;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px auto 80px auto;
+  justify-content:center;
+}
+
+.Sellerhomopage_item_wrap {
+  // width: 800px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.Sellerhomopage_item {
+  width: 400px;
+  height: 150px;
+  margin: 10px;
+  line-height: 3rem;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Sellerhomopage_item {
+  border: 0;
+  background: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  outline: none;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: #707070 2px dotted;
+  border-radius: 10px;
+}
+
+.Sellerhomopage_item:hover {
+  background-color: #edae10;
+  color: #fff;
+  border: none;
+}
+
+.linkStyle{text-decoration: none;
+color: #000;}

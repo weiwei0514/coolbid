@@ -1,0 +1,296 @@
+.flip-clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  line-height: 0;
+  perspective: 100rem;
+}
+.digit {
+  position: relative;
+  width: 2.2rem;
+  height: 3.2rem;
+  box-shadow: 0 0 0.2rem 0.1rem rgba(0, 0, 0, 0.1);
+}
+.digit-left {
+  margin-right: 0.15rem;
+}
+.digit-right {
+  margin-left: 0.15rem;
+}
+.digit::before,
+.digit::after {
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+.digit::before {
+  content: attr(data-digit-before);
+  bottom: 0;
+  align-items: flex-start;
+}
+.digit::after {
+  content: attr(data-digit-after);
+  top: 0;
+  align-items: flex-end;
+}
+.card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+  transform-style: preserve-3d;
+  transform-origin: bottom;
+  transform: rotateX(0);
+
+  transform: transform 0.7s ease-in-out;
+}
+/* onClick={this.classList.toggle('flipped')} */
+.card.flipped {
+  transform: rotateX(-180deg);
+}
+.card-face {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+.card-face-front {
+  align-items: flex-end;
+}
+.card-face-back {
+  align-items: flex-start;
+  transform: rotateX(-180deg);
+}
+.digit::before,
+.digit::after,
+.card-face-front,
+.card-face-back {
+  background-color: white;
+  color: black;
+}
+.digit,
+.digit::before,
+.digit::after,
+.card,
+.card-face {
+  border-radius: 0.4rem;
+}
+
+.digit::before,
+.card-face-back {
+  background: linear-gradient(0, #aaa, #ccc 50%, #fafafa);
+  border-top: 0.1rem solid black;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.digit::after,
+.card-face-front {
+  background: linear-gradient(0, #aaa, #bbb 50%, #f5f5f5);
+  border-bottom: 0.1rem solid black;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.digit-left,
+.digit-left::before,
+.digit-left::after,
+.digit-left .card,
+.digit-left .card-face {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.digit-right,
+.digit-right::before,
+.digit-right::after,
+.digit-right .card,
+.digit-right .card-face {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.colon {
+  font-size: 2rem;
+  margin: 0 0.3rem;
+}
+
+/* for product sort */
+.ProductContainer {
+  position: relative;
+  margin: 0 2rem 3rem 2rem;
+  width: 24rem;
+  height: 46rem;
+  border-radius: 4px;
+  background: #dbdbdb;
+  overflow: hidden;
+  box-shadow: 0px 4px 20px #1b1b1b21;
+}
+.ProductContainer3 {
+  margin: 0 2rem 2rem;
+  width: 93%;
+  height: 22.5rem;
+  display: flex;
+  border-radius: 1rem;
+  background: #dbdbdb;
+  /* box-shadow: 0px 4px 20px #1b1b1b21; */
+}
+.productImg {
+  object-fit: scale-down;
+  height: 24rem;
+  width: 24rem;
+}
+.ProductImgDiv {
+  background-color: white;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+}
+.productImg3 {
+  object-fit: scale-down;
+  height: 20.5rem;
+  width: 20.5rem;
+}
+
+.ProductImgDiv3 {
+  position: relative;
+  height: 20.5rem;
+  width: 20.5rem;
+  margin-left: 2rem;
+  margin-top:1rem;
+  border-radius:5px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.Favorite {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+.Favorite3 {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 0rem;
+  cursor: pointer;
+}
+.Favorite:hover {
+  color: rgb(254 63 29);
+}
+.Favorite3:hover {
+  color: rgb(254 63 29);
+}
+/* .Information {
+  position: relative;
+} */
+.Information3 {
+  position: relative;
+  padding: 2rem;
+}
+
+p.title {
+  height: 9 rem;
+  font-size: 2rem;
+  margin-bottom: 0;
+  padding: 1rem 2rem 0 2rem;
+  /* 三行換行 Jou 20210506*/
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+p.title3 {
+  max-width: 70rem;
+  font-size: 2.2rem;
+  padding: 0 2rem 0 0;
+  margin-bottom: 0;
+  color:#84929f;
+}
+p.price {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0;
+  display: none;
+}
+p.price3 {
+  font-size: 1.8rem;
+  text-align: left;
+  color: black;
+  margin-bottom: 0;
+}
+.biddingPrice3 {
+  font-size: 1.8rem;
+  text-align: left;
+  color: black;
+  margin-bottom: 0;
+}
+.biddingPrice {
+  color: black;
+  font-size: 1.8rem;
+  text-align: left;
+  margin-bottom: 0;
+  margin-left: 2rem;
+}
+p.time {
+  font-size: 1.8rem;
+}
+.countDownContainer {
+  display: flex;
+  user-select: none;
+  cursor: default;
+  margin-left: 1rem;
+}
+.countDownContainer3 {
+  display: flex;
+  user-select: none;
+  cursor: default;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+.infoEnd {
+  font-size: 1rem;
+  text-align: left;
+  margin: 0 0 0.4rem 1rem;
+}
+.infoEnd3 {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  margin-top: 1rem;
+}
+.info {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+.info3 {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.infoTitle {
+  text-align: center;
+  padding: 0.2rem 1.05rem;
+}
+.infoTitle1 {
+  text-align: center;
+  padding: 0.2rem 0.2rem 0.2rem 2rem;
+}
+.page {
+  margin: 0 40rem 0 0;
+  display: flex;
+  float: right;
+  width: 25%;
+}
+.page3 {
+  width: 110rem;
+  display: flex;
+  float: right;
+  height: 10rem;
+}

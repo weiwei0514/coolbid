@@ -1,0 +1,50 @@
+.txtinput {
+  width: 500px;
+}
+
+.mininput {
+  width: 500px;
+}
+
+.dateinput {
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.biginput {
+  width: 200px;
+}
+
+.button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button {
+  background-color: white;
+  color: #707070;
+  border: 1px solid #707070;
+}
+
+.button:hover {
+  background-color: #707070;
+  color: white;
+}
+
+.numberInput {
+  width: 80px;
+  height: 20px;
+  font-size: 16px;
+}
+/*# sourceMappingURL=Components.css.map */

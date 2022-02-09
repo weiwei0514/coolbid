@@ -1,0 +1,19 @@
+html,body {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  font-family: "Noto Sans TC", "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+  background-color: #eeeeee;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /* Len 5/11 */
+  outline: none; /*去除預設點擊外框*/
+  user-select: none; /*禁止反白*/
+}
+#root{
+  height:100%;
+  width: 100%;
+  /* background-color:#686a7a */
+}

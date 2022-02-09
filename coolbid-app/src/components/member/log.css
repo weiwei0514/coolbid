@@ -1,0 +1,44 @@
+.logTitle {
+  font-size: 3.6rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.title2 {
+  font-size: 1.8rem;
+  text-align: left;
+}
+input {
+  margin: 0;
+  width: 98%;
+  height: 2.8rem;
+}
+.account {
+  margin-bottom: 2rem;
+}
+.rememberMe {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+.submitBtn {
+  width: 36rem;
+  height: 3.4rem;
+}
+.rememberMeLabel {
+  font-size: 1.5rem;
+  margin-left: 0.3rem;
+}
+.m2 {
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+a.m2:hover {
+  color: rgb(255, 183, 27);
+}
+.tit {
+  margin: 0.2rem 2rem;
+  font-size: 2rem;
+  color: white;
+}

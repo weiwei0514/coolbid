@@ -1,0 +1,25 @@
+.size{
+    padding: 0;
+    margin-right: 3px;
+    cursor: pointer;
+    font-size:1.8rem;
+}
+.sizeInput[type=checkbox] {
+    display: none;
+}
+.sizeInput[type=checkbox]+span {
+    margin: .8rem;
+    display: inline-block;
+    background-color: rgb(238, 235, 235);
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: .3rem;
+    color: #444;
+    user-select: none; /* 防止文字被滑鼠選取反白 */
+}
+
+.sizeInput[type=checkbox]:checked+span {
+    color: #fff;
+    background-color: #edae10;
+}

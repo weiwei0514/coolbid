@@ -1,0 +1,106 @@
+// tabs
+.tabs {
+  background-color: white;
+}
+
+.tabs > ul {
+  list-style: none;
+  display: inline-flex;
+  border-bottom: solid 1px #707070;
+  width: 100%;
+  padding-bottom: 10px;
+  justify-content: center;
+
+  li {
+    padding: 10px 50px;
+  }
+
+  a.active{
+    color: #edae10;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+    padding-bottom: 8px;
+    font-size: 20px;
+  }
+
+  a:hover {
+    color: #edae10;
+    text-decoration: none;
+  }
+
+  a:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: -5px;
+    height: 0;
+    border-bottom: 1px solid #edae10;
+    transition: 0.3s;
+  }
+
+  a:hover:after {
+    left: 0%;
+    right: 0%;
+  }
+}
+
+//table
+
+.Table_wrap {
+  // width:1100px;
+  text-align: center;
+  border: solid 1px hsl(0, 0%, 44%);
+  padding: 10px 20px 50px 20px; //上右下左
+  box-sizing: border-box;
+  margin-bottom: 100px;
+}
+
+.Table_container {
+  margin: auto;
+  // border: 1px solid #707070;
+  background-color: white;
+  // color: hsl(0, 0%, 44%);
+  box-shadow:5px 5px 20px rgba(0, 0, 0,.2);
+  border-radius: 10px;
+  margin-top: 50px;
+  box-sizing: border-box;
+}
+
+//
+.Address_wrap {
+  width: 100%;
+  text-align: right;
+  // border: 1px solid #707070;
+  .btnArea {
+    height: 50px;
+  }
+  button {
+    margin-left: 10px;
+  }
+}
+
+.Address_list {
+  // border: 1px solid #707070;
+  border-radius:1rem;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0,.2);
+  margin: 10px auto 20px auto; //上右下左
+  text-align: left;
+  width: 600px;
+  line-height: 2rem;
+  padding: 10px 10px 10px 20px;
+  .dataArea {
+    color:#000;
+    font-size: 2rem;
+    line-height:25px;
+    margin-top: 30px;
+  }
+}
+
+.linkStyle{text-decoration: none;
+  color: #000;}
